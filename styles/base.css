@@ -32,10 +32,13 @@ header {
 }
 
 header img {
-    width: 100px;
-    height: auto;
     margin: 1rem;
-    padding-right: 1rem;
+    box-shadow: 5px 5px 3px var(--color-accent2);
+}
+
+header h1 {
+    padding-left: 1rem;
+    text-shadow: -1px 0 var(--color-accent2), 0 1px var(--color-accent2), 1px 0 var(--color-accent2), 0 -1px var(--color-accent2);
 }
 
 .nav-main {
@@ -47,18 +50,74 @@ header img {
 .nav-main nav {
     display: flex;
     justify-content: space-around;
-    justify-content: center;
+    align-content: center;
     font-weight: bold;
 }
 
 .nav-main a {
     display: block;
-    padding: 1rem;
+    padding: .5rem;
     color: var(--color-accent2);
     text-decoration: none;
 }
 
 .nav-main a:hover {
-    background-color: var(--color-accent3);
+    background-color: var(--color-primary);
     color: var(--color-secondary)
+}
+
+
+
+/* INDEX CODE */
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    width: 95%;
+    gap: 1rem;
+}
+
+.main-grid section {
+    border: 5px solid var(--color-primary);
+    box-shadow: 5px 5px 3px var(--color-accent2);
+    border-radius: 5px;
+}
+
+section h2 {
+    text-align: center;
+    width: 100%;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    background-color: var(--color-primary);
+}
+
+.coursework ul {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.slcut-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+.certificate {
+    grid-column: 1/3;
 }
