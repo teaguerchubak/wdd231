@@ -47,6 +47,7 @@ header img {
 .nav-main nav {
     display: flex;
     justify-content: space-around;
+    justify-content: center;
     font-weight: bold;
 }
 
